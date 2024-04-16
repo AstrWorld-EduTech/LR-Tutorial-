@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>What-is</title>
+  <link rel="stylesheet" href="What-is-style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <h2>Watch the Video and Choose a Right Answer</h2>
+</header>
+<div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KkAnKGuX7fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- Single Choice Question -->
+<div class="question-container">
+    <p>The following statement is not exactly what a literature review is used for:</p>
+    <form id="literatureReviewForm">
+        <input type="radio" id="option1" name="LRUse" value="1">
+        <label for="option1">To find out for yourself what’s already known about the topic</label><br>
+        <input type="radio" id="option2" name="LRUse" value="2">
+        <label for="option2">To give your reader an overview of what you find</label><br>
+        <input type="radio" id="option3" name="LRUse" value="3">
+        <label for="option3">To find out what’s missing (gap)</label><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+</div>
+<div class="divider">
+ </div>
+<!-- Back to Main Page Button -->
+<button onclick="window.location.href='http://localhost:8080/Main/Home.html';" id="BMP">Back to Main Page</button>
+
+<script>
+function checkAnswer() {
+    var selectedOption = document.querySelector('input[name="LRUse"]:checked').value;
+    if (selectedOption === "2") {
+        alert("Congratulations! That's the right answer.");
+    } else {
+        alert("Oops! That's not quite right. Try again.");
+    }
+}
+</script>
+<!-- partial -->
+  
+</body>
+</html>

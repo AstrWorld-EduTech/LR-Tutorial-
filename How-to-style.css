@@ -1,0 +1,151 @@
+/*
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: left;
+}
+
+div {
+  margin: center;
+}
+.divider {
+  height: 30px;
+}
+  .step {
+    display: none;
+    margin: auto;
+    text-align: center;
+    max-width: 560px;
+}
+.step.active {
+    display: block;
+    margin:auto;
+    text-align: center;
+    max-width: 560px;
+}
+p {
+  text-align:left;
+  margin: 8px auto;
+}
+iframe {
+display: block;
+margin: auto;
+max-width: 560px;
+height: 315px; 
+}
+.radio-container {
+margin:auto;
+    text-align: center;
+    max-width: 560px;
+}
+input[type="radio"] {
+text-align:left;
+}
+label {
+text-align:left;
+}
+
+h3 {
+text-align: center;
+}
+
+.radio-container {
+text-align: left;
+}
+
+/* Target the label elements associated with radio buttons */
+.radio-container label {
+display: inline-block; /* Makes the label a block-level element inline */
+margin-right: 10px; /* Adjust the space between radio button and label text as needed */
+}
+#BMP {
+display: block; /* To make it a block-level element */
+margin: 20px auto; /* Centers the button horizontally with top and bottom margin of 20px */
+padding: 10px 20px; /* Adds padding inside the button for better sizing */
+background-color: #3498db;; /* Example background color */
+color: white; /* Text color */
+border: none; /* Removes the border */
+border-radius: 5px; /* Rounds the corners of the button */
+cursor: pointer; /* Changes the mouse cursor to a pointer on hover */
+}
+*/
+
+
+
+/* style.css for Sub-pages */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.2;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #34495e;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h2 {
+  color: #fff;
+  margin: 0;
+}
+
+article, .step, .Questions {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.step.active {
+  display: block;
+  text-align: left;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.radio-container {
+  margin: 20px 0;
+}
+
+.radio-text {
+  margin-left: 5px;
+}
+
+/* General paragraph styling */
+p {
+  margin-bottom: 1rem;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}

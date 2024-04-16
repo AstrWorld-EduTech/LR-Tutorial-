@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>How-to</title>
+  <link rel="stylesheet" href="How-to-style.css">
+  <style>
+</style>
+</head>
+<body>
+<header>
+  <h2>Follow the Five steps and Answer the Question</h2>
+</header>
+<!--
+<div id="Video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zIYC6zG265E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>  
+-->
+<!-- Text Tutorial -->
+<div id="step1" class="step active">
+  <h2>Step 1: Search for Relevant Literature</h2>
+  <p>In this context, literature just means any academic sources like books or journal articles about your topic.</p>
+  <p>First, you need to search in the right scholarly databases, so something like Google Scholar, JSTOR, Science Direct.</p>
+  <p>Search your keywords with Boolean operators like these to help you filter and refine the search results.</p>
+  <p>Check out this video to find out how to use them.</p>
+  <button onclick="nextStep(1)" class="step-button">Next Step</button>
+</div>
+
+<div id="step2" class="step">
+  <h2>Step 2: Evaluate and Select Sources</h2>
+  <p>Evaluate and select sources. Unless your topic is super niche, you probably can not read EVERYTHING that is been written on the topic.</p>
+  <p>Once you've got the sources from step 1, read the abstract to scan whether an article is relevant or not. Also scan the bibliography to find other relevant sources!</p>
+  <p>You should also pay attention to the citation count on Google Scholar. If the count is high, the source is probably important and you should include it.</p>
+  <button onclick="prevStep(2)" >Go Back</button>
+  <button onclick="nextStep(2)" >Next Step</button>
+</div>
+
+<div id="step3" class="step">
+  <h2>Step 3: Identify Themes, Debates, and Gaps</h2>
+  <p>Identify themes, debates, and gaps. As you read, take notes and pay attention to the connections between different sources.</p>
+  <p>This way, you can organize your literature review's arguments and structure a lot easier. Here are some things to look for: </p>
+  <p>Trends and patterns in theory, method or results, themes debates or contradictions, influential studies and gaps.</p>
+  <button onclick="prevStep(3)" >Go Back</button>
+  <button onclick="nextStep(3)">Next Step</button>
+</div>
+
+<div id="step4" class="step">
+  <h2>Step 4: Outline Your Literature Review's Structure</h2>
+  <p>Outline your literature review's structure. You can go about your literature review's structure in a few ways.</p>
+  <p>It all depends on what you found in the literature and what you want to emphasize.</p>
+  <p>Here are 4 common approaches to structure the literature review:</p> 
+  <p>Chronological, thematic, methodological, and theoretical. More details in this video, check it out.</p>
+  <button onclick="prevStep(4)">Go Back</button>
+  <button onclick="nextStep(4)">Next Step</button>
+</div>
+
+<div id="step5" class="step">
+  <h2>Step 5: Get things done!</h2>
+  <p>And finally, get writing! Make sure your literature review has an introduction, a main body that summarizes and synthesizes the sources, and a conclusion, just like other academic texts.</p>
+  <p>Now let's get your literature review started! To learn more about literature review, click this playlist! I'll see you there.</p>
+  <button onclick="prevStep(5)">Go Back</button>
+</div>
+
+<!-- Single Choice Question -->
+<div class="Questions">
+    <h3>Why is the citation count important when selecting sources for a literature review? </h3>
+    <form id="literatureReviewForm">
+      <div class="radio-container">
+        <input type="radio" id="option1" name="LRUse" value="1">
+        <label for="option1" class="radio-text">High citation counts suggest unreliability.</label><br>
+        <input type="radio" id="option2" name="LRUse" value="2">
+        <label for="option2" class="radio-text">High citation counts indicate important sources.</label><br>
+        <input type="radio" id="option3" name="LRUse" value="3">
+        <label for="option3" class="radio-text">Citation counts determine review length.</label><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+      </div>
+    </form>
+  </div>
+    <button onclick="window.location.href='http://localhost:8080/Main/Home.html';" id="BMP">Back to Main Page</button>
+<div class="divider">
+ </div>
+
+
+
+<script src="How-to-script.js">
+
+</script>
+  
+</body>
+</html>
